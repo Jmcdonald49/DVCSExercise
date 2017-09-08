@@ -67,6 +67,8 @@
                                 $('#SiteNav').next().removeAttr('style');
                             });
                     </script>
+                    <asp:SiteMapDataSource ID="SiteNavDataSource" runat="server"
+                          ShowStartingNode="false"/>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
