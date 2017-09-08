@@ -61,6 +61,12 @@
                          DynamicMenuStyle-CssClass="dropdown-menu"
                          IncludeStyleBlock="false" EnableTheming="false"
                          EnableViewState="false" ></asp:Menu>
+                    <script>
+                            $(function () {
+                                //Isolate the context for applying bootstrap styling
+                                $('#SiteNav').next().removeAttr('style');
+                            });
+                    </script>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
